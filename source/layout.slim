@@ -1,0 +1,22 @@
+doctype html
+html lang="uk"
+  head
+    meta charset="utf-8"
+    title = current_article.nil? ? "Репетиторство у Львові" : current_article.title + " | Репетиторство"
+    - desc = current_article.nil? ? "Веб-сайт про репетиторство у Львові" : current_article.data.description
+    meta name="description" content="#{desc}"
+    meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = favicon_tag 'img/favicon.ico'
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic,latin"
+    link rel="stylesheet" media="print" href="/stylesheets/print.css"
+    = stylesheet_link_tag "style"
+
+  body
+    = partial "partials/header"
+
+    .container role="main"
+      = yield
+
+    = javascript_include_tag "application"

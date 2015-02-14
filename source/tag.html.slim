@@ -1,0 +1,12 @@
+---
+pageable: true
+---
+.blog
+  h1.blog-head Публікації з теґом '#{tagname}'
+  section.content
+    - page_articles.each_with_index do |article, i|
+      = partial "partials/article_item", locals: {article: article}
+  = partial "partials/sidebar"
+
+  .pagination
+    = pagination_links

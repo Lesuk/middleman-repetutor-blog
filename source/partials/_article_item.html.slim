@@ -1,0 +1,6 @@
+article
+  h2 = link_to article.title, article
+  .summary = article.summary
+  .tags = article.tags.map{ |i| link_to i.to_s, tag_path(i) }.join(", ")
+  span.bull &bull;
+  time = article.date.strftime('%d.%m.%y')

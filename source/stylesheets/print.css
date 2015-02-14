@@ -1,0 +1,20 @@
+.blog,
+.article-page{
+  border: none;
+}
+.article-page .main-content p{
+font-size: 14px;
+line-height: 21px;
+}
+.article-page .tags a{
+border: none;
+margin: 0;
+}
+.header,
+.article-page .info .author img,
+.article-page .info .share{
+  display: none;
+}
+.article-page .info .author span{
+  margin-left: 50px;
+}

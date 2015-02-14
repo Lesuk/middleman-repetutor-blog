@@ -1,0 +1,8 @@
+aside.sidebar
+  .tags
+    h3 Публікації за теґом
+    ul
+      - blog.tags.sort.each do |tag, articles|
+        - tag_class = is_page_active(tag_path(tag)) ? 'active' : ''
+        li class="#{tag_class}"
+          = link_to "#{tag}" + "<span>#{articles.size}</span>", tag_path(tag)

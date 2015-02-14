@@ -1,0 +1,46 @@
+@import "compass/utilities";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 60em,
+  math: fluid,
+  global-box-sizing: border-box,
+  debug: (
+    image: show,
+    color: rgba(#66f, .0),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+.container{
+  @include container;
+}
+
+.blog,
+.article-page{
+  position: relative;
+  margin: 0 10px 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  @include clearfix;
+}
+
+.content{
+  @include span(8);
+  padding-left: 25px;
+}
+
+.pagination{
+  @include span(8);
+}
+
+.main-content{
+  @include pad(1,1);
+}
+
+.sidebar{
+  @include span(4 last);
+}

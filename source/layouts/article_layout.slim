@@ -1,0 +1,21 @@
+= wrap_layout :layout do
+  article.article-page
+    header
+      h1 = current_article.title
+    .tags
+      - current_article.tags.sort_by(&:length).each do |tag|
+        = link_to tag.to_s, tag_path(tag)
+    .info
+      .author
+        img width="40" height="40" alt="Юлія Костенко" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/48.jpg"
+        span Юлія Костенко
+      time.date = current_article.date.strftime('%d.%m.%y')
+      .share
+        a.vk href="#{vk_share(current_article)}" rel="nofollow" title="Поділитись в ВКонтакті" vk
+        a.fb href="#{fb_share(current_article)}" rel="nofollow" title="Поділитись в Facebook" fb
+        a.tw href="#{tw_share(current_article)}" rel="nofollow" title="Поділитись в Twitter" tw
+        a.odn href="#{odn_share(current_article)}" rel="nofollow" title="Поділитись в Однокласниках" odn
+        a.print href="javascript:if(window.print)window.print()" rel="nofollow" title="Друкувати" print
+    div.main-content role="main"
+      = yield
+

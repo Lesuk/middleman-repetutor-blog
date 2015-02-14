@@ -1,0 +1,53 @@
+.header{
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+
+  .header-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  a{
+    color: #2c3e50;
+  }
+
+  h2{
+    margin: 0;
+    padding-left: 46px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAWCAMAAACfbM4MAAAB71BMVEUsPlD///8sPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAsPlAXCH8EAAAApHRSTlMAAAECBAUGBwgJCwwODxAREhMUFhcYGRscHiAjJCUmKCkrLC8wMTI0NTk7PD1AQUJDREVHS01PUFFTVFZYWVpdXl9hY2VmZ2lqa2xtb3FzdHZ6fH1/gIGCg4SFh4iJiouMjo+QkZKTmJydnqGio6anqKmqq6yur7Gys7a3uLm6vL3AwcLDxMfJyszNztDU1tfY2dvc3d7f4ePk5ebo6evt7vDx8hhj1acAAAGPSURBVHgBY0AH6tkFWsh8RiBAVcFt3TCrrHBWiz0fTkUysTMmBkkwMIj6985OUcCmiMW0eGadDQeUY1E5s8KSHU2RsH//7DRFZGNl42ZMDhZHUqSTO73FRQDdCzwODTMKDSGKOO3a5udrM2AF6lnzup25GRn8p07xFGHACQSde2eEMnhMmB6vjFuRtF/ftAAGBlbdnBk9ARLYVPA4tc5YEsMJcbiob9e0LGMONCVq0f0To6Qa3RDhFLNo8tQYeYQKfteOWYuzWBgYWrwRioKLuBybZldb8UJ8lTatL0Q8PQHIbPZCKAotA8VL+ISZ6WpCHl1zC/WYGRgyk4Fi7T4oikCAzbxk+qzOQEkgE6LIZU6fClxRWCmMJa4BY2WkMDBMcq5NhisKL8cMgaxUBgaP2ZNU4YrMFgqjq+Gb5wgUXzJHDK6IOWOqPqoazd4SNgaG/Hnz3ZASXcT8UgNOGIdNJ29BIhOQwcnPx4qcMuWSJk2pT/C0s3WPrZk8NV0JRxrnMoqs7Ozt7aqKMeFFTuMAoktgKLU7W+sAAAAASUVORK5CYII=") 0 19px no-repeat;
+  }
+
+  .main-nav{
+    display: inline-block;
+    float: right;
+
+    a{
+      display: inline-block;
+      font-size: 16px;
+      line-height: 30px;
+      padding: 15px 0;
+      color: #3498db;
+      text-decoration: none;
+      height: 60px;
+
+      &:last-child{
+        margin-left: 30px;
+      }
+
+      &:hover,
+      &.active{
+        border-bottom: 2px solid #3498db;
+      }
+    }
+  }
+
+}
