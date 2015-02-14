@@ -7,7 +7,7 @@
 # Ignore bundler config
 /.bundle
 
-/articles
+/sources/articles
 
 # Ignore the build directory
 /build
