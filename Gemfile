@@ -11,3 +11,5 @@ gem 'middleman-minify-html'
 gem "builder", "~> 3.0"
 gem 'slim'
 gem "susy"
+gem "breakpoint"
+gem "babosa"

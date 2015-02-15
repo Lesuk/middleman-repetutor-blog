@@ -3,6 +3,7 @@
 @import "susy";
 @import "layout/grid";
 @import "layout/header";
+@import "breakpoint";
 
 @include border-box-sizing;
 @import "compass/css3/border-radius";
@@ -10,6 +11,7 @@
 $dark_blue: #2c3e50;
 $main_gray: #5f5f5f;
 $light_gray: #aaa;
+$link_color: #3498db;
 
 body {
   font: {
@@ -287,5 +289,37 @@ body {
       background: $dark_blue;
       color: #fff;
     }
+  }
+}
+
+.n-p-posts{
+  padding: 0 8.47458%;
+  margin: 10px 0 20px;
+
+  h4{
+    margin: 5px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #DDE4E6;
+    text-transform: uppercase;
+  }
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.4;
+    color: $dark_blue;
+
+    &:hover{
+      text-decoration: underline;
+      color: $link_color;
+    }
+  }
+  .meta-nav-r {
+    margin-left: 10px;
+  }
+  .meta-nav-l {
+    margin-right: 10px;
   }
 }

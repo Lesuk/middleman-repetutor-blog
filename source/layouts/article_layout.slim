@@ -1,3 +1,6 @@
+---
+pageable: true
+---
 = wrap_layout :layout do
   article.article-page
     header
@@ -7,8 +10,10 @@
         = link_to tag.to_s, tag_path(tag)
     .info
       .author
-        img width="40" height="40" alt="Юлія Костенко" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/48.jpg"
-        span Юлія Костенко
+        - author = data.authors.authors.each_with_index do |author, i|
+          - if i == current_article.data.author_index
+            img width="40" height="40" alt="#{author.name}" src="#{author.img_path}"
+            span #{author.name}
       time.date = current_article.date.strftime('%d.%m.%y')
       .share
         a.vk href="#{vk_share(current_article)}" rel="nofollow" title="Поділитись в ВКонтакті" vk
@@ -16,6 +21,7 @@
         a.tw href="#{tw_share(current_article)}" rel="nofollow" title="Поділитись в Twitter" tw
         a.odn href="#{odn_share(current_article)}" rel="nofollow" title="Поділитись в Однокласниках" odn
         a.print href="javascript:if(window.print)window.print()" rel="nofollow" title="Друкувати" print
-    div.main-content role="main"
+    .main-content role="main"
       = yield
 
+    = partial "partials/next_prev_articles", locals: {current_article: current_article}

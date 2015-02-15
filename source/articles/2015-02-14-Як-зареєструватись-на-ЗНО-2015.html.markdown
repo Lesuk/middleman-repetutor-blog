@@ -4,6 +4,7 @@ slug: yak-zareyestruvatus-na-zno-2015
 description: How to register on ZNO 2015
 date: 2015-02-14 09:24 UTC
 tags: ЗНО, 2015, реєстрація
+author_index: 0
 img_url: http://lorempixel.com/400/200/
 ---
 

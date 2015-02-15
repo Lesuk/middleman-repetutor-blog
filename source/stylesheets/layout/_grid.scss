@@ -44,3 +44,13 @@ $susy: (
 .sidebar{
   @include span(4 last);
 }
+.n-p-posts{
+  @include clearfix;
+}
+.nav-previous{
+  @include span(6);
+}
+.nav-next{
+  @include span(6 last);
+  text-align: right;
+}

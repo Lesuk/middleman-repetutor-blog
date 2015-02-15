@@ -4,6 +4,7 @@ slug: pidgotovka-do-zno-z-fizuku
 description: Як підготуватись до зно з фізики ми розкажемо
 date: 2015-02-14 09:24 UTC
 tags: ЗНО, підготовка, фізика
+author_index: 1
 img_url: http://lorempixel.com/400/200/
 ---
 

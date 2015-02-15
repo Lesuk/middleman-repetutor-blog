@@ -1,0 +1,15 @@
+section.n-p-posts
+      .nav-previous
+        - prev_article = current_article.previous_article
+        - if prev_article
+          h4 Попередня публікація
+          a href="#{prev_article.url}" rel="prev" title="#{prev_article.title}"
+            span.meta-nav-l &larr;
+            | #{prev_article.title}
+      .nav-next
+        - next_article = current_article.next_article
+        - if next_article
+          h4 Наступна публікація
+          a href="#{next_article.url}" rel="next" title="#{next_article.title}"
+            | #{next_article.title}
+            span.meta-nav-r &rarr;

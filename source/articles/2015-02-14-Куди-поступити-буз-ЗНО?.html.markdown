@@ -1,9 +1,10 @@
 ---
-title: Куди поступити буз ЗНО?
+title: Куди поступити без ЗНО?
 slug: kuda-postyputu-bez-zno
 description: Куда можна поступити?
 date: 2015-02-14 09:25 UTC
 tags: ЗНО, університет, бурса
+author_index: 1
 img_url: http://lorempixel.com/400/200/
 ---
 
